@@ -5,7 +5,7 @@ public class Config {
     public static float BUN_PRICE = 1f;
     public static String INGREDIENT_NAME = "TEST INGREDIENT_NAME";
     public static float INGREDIENT_PRICE = 1f;
-    public static IngredientType INGREDIENT_TYPE = IngredientType.FILLING;
+    public static IngredientType INGREDIENT_TYPE_FILLING = IngredientType.FILLING;
     public static float DEF_ASSERT_DELTA = 0.001f;
 
 }

@@ -70,7 +70,7 @@ public class BurgerTest {
         burger.addIngredient(ingredient);
         when(ingredient.getPrice()).thenReturn(Config.INGREDIENT_PRICE);
         when(ingredient.getName()).thenReturn(Config.INGREDIENT_NAME);
-        when(ingredient.getType()).thenReturn(Config.INGREDIENT_TYPE);
+        when(ingredient.getType()).thenReturn(Config.INGREDIENT_TYPE_FILLING);
 
         String expectedReceipt = String.format("(==== %s ====)%n", bun.getName()) +
                 String.format("= %s %s =%n", IngredientType.FILLING.toString().toLowerCase(), ingredient.getName()) +
