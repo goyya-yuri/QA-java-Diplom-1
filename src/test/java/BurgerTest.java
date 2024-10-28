@@ -2,6 +2,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 import praktikum.Bun;
@@ -14,8 +15,10 @@ import static org.mockito.Mockito.when;
 @RunWith(MockitoJUnitRunner.class)
 public class BurgerTest {
 
-    private final Bun bun = Mockito.mock(Bun.class);
-    private final Ingredient ingredient = Mockito.mock(Ingredient.class);
+    @Mock
+    Bun bun;
+    @Mock
+    Ingredient ingredient;
 
     private Burger burger;
 
